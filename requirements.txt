@@ -1,0 +1,15 @@
+trimesh==3.22.5
+termcolor==2.1.0
+imageio==2.26.0
+opencv-python==4.8.0.74
+PyYAML==6.0
+yacs==0.1.8
+yapf==0.32.0
+yarl==1.8.2
+kornia==0.6.9
+gitpython==3.1.30 
+tqdm==4.65.0 
+matplotlib==3.7.2 
+pymcubes==0.1.4
+tensorboard==2.12.1
+aspose-3d

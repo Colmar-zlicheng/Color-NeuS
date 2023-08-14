@@ -1,0 +1,88 @@
+DATASET:
+  TYPE: OmniObject3D
+  DATA_ROOT: ./data
+
+DATA_PRESET:
+  FX_ONLY: False
+  INCLUDE_MASK: False
+  OPENGL_SYS: False
+
+MODEL:
+  TYPE: NeuS_Trainer
+  PRETRAINED: null
+  N_RAYS: 1024
+  EVAL_RAY_SIZE: 1024
+  NORMALIZE_DIR: True
+  FOCAL_ORDER: 2
+  LEARN_FOCAL: False
+  LEARN_R: False
+  LEARN_T: False
+  MASK_RATE: [0.5, 0.8]
+  POSE_MODE: 6d
+
+  RENDERER:
+    TYPE: Color_NeuS
+    N_SAMPLES: 64
+    N_IMPORTANCE: 64
+    UP_SAMPLE_STEPS: 4
+    PERTURB: 1.0
+    SDF:
+      D_IN: 3
+      D_OUT: 257
+      D_HIDDEN: 256
+      N_LAYERS: 8
+      SKIP_IN: [4]
+      MULTIRES: 6
+      BIAS: 0.5
+      SCALE: 3.0
+      GEOMETRIC_INIT: True
+      WEIGHT_NORM: True
+      INSIDE_OUTSIDE: False
+    COLOR:
+      D_FEATURE: 256
+      MODE: no_view_dir
+      D_IN: 6
+      D_OUT: 3
+      D_HIDDEN: 256
+      N_LAYERS: 4
+      WEIGHT_NORM: True
+      MULTIRES_VIEW: 0
+      SQUEEZE_OUT: True
+    RELIGHT:
+      D_IN: 6
+      D_OUT: 3
+      D_HIDDEN: 256
+      N_LAYERS: 4
+      Y_IN_LAYER: 3
+      MULTIRES_VIEW: 4
+      INCLUDE_GRAD: True
+      INV_SIGMOID: True
+    DEVIATION:
+      INIT_VAL: 0.3
+
+  LOSS:
+    RGB_LOSS_TYPE: mse
+    LAMBDA_FINE: 1.0
+    LAMBDA_EIKONAL: 0.1
+    LAMBDA_MASK: 0.0
+    LAMBDA_RELIGHT: 1.0
+
+TRAIN:
+  BATCH_SIZE: 8
+  ITERATIONS: 100000
+  OPTIMIZE:
+    TYPE: adam
+    LR: 0.0005
+    SCHEDULER_TYPE: NEUS
+    WARM_UP: 5000
+    LR_ALPHA: 0.05
+  LOG_INTERVAL: 10
+  SAVE_INTERVAL: 10000
+  VIZ_IMAGE_INTERVAL: 10000
+  VIZ_MESH_INTERVAL: 10000
+  MANUAL_SEED: 1
+  CONV_REPEATABLE: True
+  GRAD_CLIP_ENABLED: True
+  GRAD_CLIP:
+    TYPE: 2
+    NORM: 1.0
