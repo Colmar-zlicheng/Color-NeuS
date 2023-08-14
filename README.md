@@ -27,6 +27,8 @@
   <img src="./docs/pipeline.png" alt="Logo" width="100%">
 </div>
 
+https://github.com/Colmar-zlicheng/Color-NeuS/assets/111580763/227ac7c1-dc46-4d77-a704-2c30ee03c1f5
+
 ## :rocket: Dependencies
 ```shell
 git clone https://github.com/Colmar-zlicheng/Color-NeuS.git
