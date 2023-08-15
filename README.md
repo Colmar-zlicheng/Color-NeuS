@@ -29,7 +29,7 @@
   <img src="./docs/pipeline.png" alt="Logo" width="100%">
 </div>
 
-https://github.com/Colmar-zlicheng/Color-NeuS/assets/111580763/227ac7c1-dc46-4d77-a704-2c30ee03c1f5
+https://github.com/Colmar-zlicheng/Color-NeuS/assets/111580763/5b9a3ed9-7d4f-48d9-84b5-a60a0a6adef9
 
 ## :rocket: Dependencies
 ```shell
