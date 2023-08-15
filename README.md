@@ -20,6 +20,8 @@
 <h3 align="center">
   <a href="https://colmar-zlicheng.github.io/color_neus"><strong>Project Page</strong></a>
   |
+  <a href="https://arxiv.org/abs/2308.06962"><strong>arXiv</strong></a>
+  |
   <a href="https://drive.google.com/drive/folders/1C6vcRiy_MFMtsaR8AydRAPrLIkok-tJm?usp=sharing"><strong>Data</strong></a>
 </h3>
 
@@ -92,10 +94,10 @@ This code is available for non-commercial scientific research purposes as define
 ## :earth_asia: Citation
 
 ```bibtex
-@inproceedings{zhong2023colorneus,
+@article{zhong2023colorneus,
     author    = {Zhong, Licheng and Yang, Lixin and Li, Kailin and Zhen, Haoyu and Han, Mei and Lu, Cewu},
     title     = {{Color-NeuS}: Reconstructing Neural Implicit Surfaces with Color},
-    booktitle = {arxiv},
+    journal = {arXiv preprint arXiv:2308.06962},
     year      = {2023},
 }
 ```
