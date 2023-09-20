@@ -82,7 +82,7 @@ python train.py -g 0 --config configs/NeuS_iho.yaml -obj ghost_bear --exp_id Neu
 
 ## :monocle_face: Inference  
 - set corresponding `${DATASET}` and `${OBJECT_NAME}` as above
-- set `${PATH_TO_CHECKPOINT}` as the path to the checkpoint (.pth.tar) to be loaded
+- set `${PATH_TO_CHECKPOINT}` as the path to the checkpoint (NeuS_Trainer.pth.tar) to be loaded
 ```shell
 python evaluation.py -g 0 --config configs/Color_NeuS_${DATASET}.yaml -obj ${OBJECT_NAME} -rr 512 --reload ${PATH_TO_CHECKPOINT}
 ```

@@ -95,7 +95,7 @@ class NeuS_Trainer(ModuleAbstract, nn.Module):
         logger.info(f"{self.name} got lambda_fine: {self.lambda_fine}")
         logger.info(f"{self.name} got lambda_eikonal: {self.lambda_eikonal}, lambda_mask: {self.lambda_mask}")
         logger.info(f"{self.name} got lambda_relight: {self.lambda_relight}")
-        init_weights(self, pretrained=cfg.PRETRAINED, strict=False)
+        init_weights(self, pretrained=cfg.PRETRAINED, strict=True)
 
     def setup(self, summary_writer, **kwargs):
         self.summary = summary_writer
