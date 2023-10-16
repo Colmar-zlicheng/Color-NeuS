@@ -15,6 +15,7 @@
     <a><strong>Cewu Lu</strong></a>
   </p>
 
+<h2 align="center">3DV 2024</h2>
 </p>
 
 <h3 align="center">
@@ -94,11 +95,11 @@ This code is available for non-commercial scientific research purposes as define
 ## :earth_asia: Citation
 
 ```bibtex
-@article{zhong2023colorneus,
+@inproceedings{zhong2024colorneus,
+    title     = {Color-NeuS: Reconstructing Neural Implicit Surfaces with Color},
     author    = {Zhong, Licheng and Yang, Lixin and Li, Kailin and Zhen, Haoyu and Han, Mei and Lu, Cewu},
-    title     = {{Color-NeuS}: Reconstructing Neural Implicit Surfaces with Color},
-    journal = {arXiv preprint arXiv:2308.06962},
-    year      = {2023},
+    year      = {2024}
+    booktitle = {International Conference on 3D Vision (3DV)},
 }
 ```
 
