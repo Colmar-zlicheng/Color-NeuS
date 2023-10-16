@@ -98,8 +98,8 @@ This code is available for non-commercial scientific research purposes as define
 @inproceedings{zhong2024colorneus,
     title     = {Color-NeuS: Reconstructing Neural Implicit Surfaces with Color},
     author    = {Zhong, Licheng and Yang, Lixin and Li, Kailin and Zhen, Haoyu and Han, Mei and Lu, Cewu},
-    year      = {2024}
     booktitle = {International Conference on 3D Vision (3DV)},
+    year      = {2024}
 }
 ```
 
