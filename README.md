@@ -52,7 +52,7 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 - set `${OBJECT_NAME}` as the name of the object in the dataset
 
 ```shell 
-python train.py -g 0 --config configs/Color_NeuS_${DATASET}.yaml -obj ${OBJECT_NAME} --exp_id ${EXP_ID}
+python train.py -g 0 --cfg configs/Color_NeuS_${DATASET}.yaml -obj ${OBJECT_NAME} --exp_id ${EXP_ID}
 ```
 
 ### Command line arguments
@@ -62,13 +62,13 @@ python train.py -g 0 --config configs/Color_NeuS_${DATASET}.yaml -obj ${OBJECT_N
 ### For example
 ```shell
 # IHO Video: ghost_bear
-python train.py -g 0 --config configs/Color_NeuS_iho.yaml -obj ghost_bear --exp_id Color_NeuS_iho_ghost_bear
+python train.py -g 0 --cfg configs/Color_NeuS_iho.yaml -obj ghost_bear --exp_id Color_NeuS_iho_ghost_bear
 # DTU: dtu_scan83
-python train.py -g 0 --config configs/Color_NeuS_dtu.yaml -obj 83 --exp_id Color_NeuS_dtu_83
+python train.py -g 0 --cfg configs/Color_NeuS_dtu.yaml -obj 83 --exp_id Color_NeuS_dtu_83
 # BlendedMVS: bmvs_bear
-python train.py -g 0 --config configs/Color_NeuS_bmvs.yaml -obj bear --exp_id Color_NeuS_bmvs_bear
+python train.py -g 0 --cfg configs/Color_NeuS_bmvs.yaml -obj bear --exp_id Color_NeuS_bmvs_bear
 # OmniObject3D: doll_002
-python train.py -g 0 --config configs/Color_NeuS_omniobject3d.yaml -obj doll_002 --exp_id Color_NeuS_omniobject3d_doll_002
+python train.py -g 0 --cfg configs/Color_NeuS_omniobject3d.yaml -obj doll_002 --exp_id Color_NeuS_omniobject3d_doll_002
 ```
 
 ### Checkpoint
@@ -78,14 +78,14 @@ All the training checkpoints are saved at `exp/${EXP_ID}_{timestamp}/checkpoints
 We also provide our implementation of [NeuS](https://github.com/Totoro97/NeuS) in this repo. To train NeuS, you can replace `Color_NeuS_${DATASET}.yaml` with `NeuS_${DATASET}.yaml` in the above command line, such as:
 ```shell
 # IHO Video: ghost_bear
-python train.py -g 0 --config configs/NeuS_iho.yaml -obj ghost_bear --exp_id NeuS_iho_ghost_bear
+python train.py -g 0 --cfg configs/NeuS_iho.yaml -obj ghost_bear --exp_id NeuS_iho_ghost_bear
 ```
 
 ## :monocle_face: Inference  
 - set corresponding `${DATASET}` and `${OBJECT_NAME}` as above
 - set `${PATH_TO_CHECKPOINT}` as the path to the checkpoint (NeuS_Trainer.pth.tar) to be loaded
 ```shell
-python evaluation.py -g 0 --config configs/Color_NeuS_${DATASET}.yaml -obj ${OBJECT_NAME} -rr 512 --reload ${PATH_TO_CHECKPOINT}
+python evaluation.py -g 0 --cfg configs/Color_NeuS_${DATASET}.yaml -obj ${OBJECT_NAME} -rr 512 --reload ${PATH_TO_CHECKPOINT}
 ```
 - `-rr, --recon_res` is the resolution of the reconstructed mesh. The default value is 512.
 ## :key: License
