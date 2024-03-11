@@ -37,7 +37,7 @@ https://github.com/Colmar-zlicheng/Color-NeuS/assets/111580763/5b9a3ed9-7d4f-48d
 git clone https://github.com/Colmar-zlicheng/Color-NeuS.git
 cd Color-NeuS
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
-pip install -r requirement.txt
+pip install -r requirements.txt
 pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 ```
 ## :steam_locomotive: Train
