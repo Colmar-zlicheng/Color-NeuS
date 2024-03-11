@@ -11,7 +11,7 @@
     <a><strong>Haoyu Zhen</strong></a>
     ·
     <a><strong>Mei Han</strong></a>
-    .
+    ·
     <a><strong>Cewu Lu</strong></a>
   </p>
 
