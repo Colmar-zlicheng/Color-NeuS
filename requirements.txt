@@ -7,7 +7,7 @@ yacs==0.1.8
 yapf==0.32.0
 yarl==1.8.2
 kornia==0.6.9
-gitpython==3.1.30 
+gitpython==3.1.41 
 tqdm==4.65.0 
 matplotlib==3.7.2 
 pymcubes==0.1.4
