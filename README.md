@@ -90,7 +90,7 @@ python evaluation.py -g 0 --cfg config/Color_NeuS_${DATASET}.yml -obj ${OBJECT_N
 - `-rr, --recon_res` is the resolution of the reconstructed mesh. The default value is 512.
 ## :key: License
 
-This code is available for non-commercial scientific research purposes as defined in the [LICENSE](LICENSE) file. By downloading and using the code you agree to the terms in the [LICENSE](LICENSE).
+The code provided herein are available for usage as specified in the [LICENSE](LICENSE) file. By downloading and using the code you agree to the terms in the [LICENSE](LICENSE).
 
 ## :earth_asia: Citation
 
